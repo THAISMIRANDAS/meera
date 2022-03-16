@@ -1,0 +1,20 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+
+CSS: font-family: 'Imbue', serif;
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+</style>
+
+CSS: font-family: 'Maven Pro', sans-serif;
+
+
+cor:
+--cor0: #ffffff;
+--cor1: #1e2e85;
+--cor2: #2a6eac;
+--cor3: #fb6376;
+--cor4: #ddfcad;
