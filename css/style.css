@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&display=swap');
 
 :root {
     --cor0: #ffffff;
@@ -13,6 +14,7 @@
     --font-padrao: Verdana, Arial, Helvetica, sans-serif;
     --font-destaque: 'Maven Pro', sans-serif;
     --font-titulo: 'Imbue', serif;
+    --font-nav: 'Montserrat', sans-serif;
 }
 
 * {
@@ -20,28 +22,16 @@
     padding: 0;
 }
 
-header {
-    background-color: white;
-}
-
 .center {
+    background-color: white;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 1400px;
-    min-width: 880px;
-}
-
-.logo {
-    width: 30%;
-    margin: 18px 20px 1px -95px;
 }
 
 header h1 {
     text-align: justify;
-    margin: 0px 20px 20px 20px;
     font-family: var(--font-titulo);
     font-size: 2em;
     font-weight: 100;
@@ -49,13 +39,15 @@ header h1 {
 
 nav {
     background-color: var(--cor0);
-    padding: 10px;
+    padding: 20px;
     text-align: end;
     margin: 5px 20px 10px 5px;
 }
 
 nav > a {
-    font-family: var(--font-destaque);
+    font-family: var(--font-nav);
+    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
     padding: 15px;
     transition-duration: 0.5s;
@@ -74,7 +66,7 @@ nav > a:hover {
 
 .slider {
     display: block;
-    max-width: 1400px;
+    max-width: 1000px;
     min-width: 500px;
     margin: auto;
     margin-top: 20px;
@@ -145,20 +137,20 @@ nav > a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--cor1);
-    color: var(--cor0);
+    background-color: var(--cor0);
+    color: var(--cor1);
     padding: 10px;
     margin-top: 900px;
 }
 
 .rodape h4 {
     font-family: var(--font-destaque);
-    color: var(--cor0);
+    color: var(--cor1);
     padding: 3px;
 }
 
 .rodape a {
-    color: var(--cor0);
+    color: var(--cor1);
     text-decoration: none;
 }
 
@@ -188,8 +180,8 @@ nav > a:hover {
 }
 
 .logo-final {
-    display:block;
-    width: 100%;
+    display: block;
+    width: 80%;
 }
 
 .imagem > p {
