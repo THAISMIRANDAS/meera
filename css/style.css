@@ -52,7 +52,7 @@ nav {
     padding: 6px;
     text-align: center;
     margin: 6px 0px 6px 0px;
-    height: 17px;
+    height: 40px;
 }
 
 nav > a {
@@ -67,165 +67,59 @@ nav > a {
 }
 
 nav > a:hover {
-    color: var(--cor3)
-}
-
-#container {
-    background-color: var(--cor0);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    position: relative;
-}
-
-.slider {
-    display: block;
-    max-width: 1000px;
-    min-width: 500px;
-    margin: auto;
-    margin-top: 10px;
-    position: relative;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}
-
-.slider input {
-    display: none;
-}
-
-.slider label {
-    background-color: #000;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-
-.slider li:nth-child(1) label {
-    left: 10px;
-}
-
-.slider li:nth-child(2) label {
-    left: 40px;
-}
-
-.slider li:nth-child(3) label {
-    left: 70px;
-}
-
-.slider li:nth-child(4) label {
-    left: 100px;
-}
-
-.slider li:nth-child(5) label {
-    left: 130px;
-}
-
-#texto {
-    position: absolute;
-    /*top: 55vh;*/
-    transform: translate(20%, 155%);
-}
-
-.depoimentos > p {
-    height: 10px;
-    width: 500px ;
-    display: flex;
-    background-color: var(--cor2);
-    border: 1px solid #8ccced;
+    color: var(--cor3);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.144), transparent);
     border-radius: 5px;
-    padding: 30px;
-    margin: 20px;
 }
 
-
-.rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: white;
-    color: var(--cor1);
-    padding: 10px;
-    margin-top: 100px;
+.slide-size {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.rodape h4 {
+.font-depoimentos {
     font-family: var(--font-destaque);
     color: var(--cor1);
-    padding: 3px;
 }
 
-.rodape a {
-    color: var(--cor1);
-    text-decoration: none;
+.font-depoimentos h4,p {
+    font-family: var(--font-nav);
+}
+
+.social li{
+    list-style-position: inside;
+    list-style-type: none;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.rodape {
+    background-color: white;
+    color: var(--cor1); 
+}
+
+.rodape p {
+    font-size: .9em;
+    text-align: center;
 }
 
 .rodape a:hover {
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
-.contato ul {
-    list-style-position: inside;
-    list-style-type: none;
-    font-family: var(--font-padrao);
-    font-size: 0.9em;
+.link {
+    text-decoration: none;
+    color: var(--cor1);
 }
 
-.contato li {
-    padding: 0px 0px 2px 0px;
-}
-
-.social ul {
-    list-style-position: inside;
-    list-style-type: none;
-    columns: 3;
-    padding: 10px 0px 0px 0px;
-}
-
-.atendimento ul {
-    list-style-type: '\2714\00A0\00A0';
-    list-style-position: inside;
-    font-family: var(--font-padrao);
-    font-size: 0.9em;
-}
-
-.logo-final {
-    display: block;
-    width: 80%;
-}
-
-.imagem > p {
-    text-align: justify;
-    font-family: var(--font-padrao);
-    font-size: 0.8em;
+.font-rodape > h5 {
+    font-family: var(--font-destaque);
 }
 
 .privacidade {
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     font-family: var(--font-padrao);
     font-size: 0.8em;
 }
