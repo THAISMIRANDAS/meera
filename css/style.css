@@ -125,4 +125,35 @@ nav > a:hover {
 }
 
 
+@media screen and (max-width: 500px) {
+    .logo img {
+        max-width: 360px;
+    }
+
+    nav {
+        font-size: 0.9em;
+        padding-top: 8px;
+    }
+
+    .slide-size {
+        max-width: 100%;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+
+    ul.nav.social {
+        justify-content: center;
+    }
+
+    .social li {
+        padding: 5px 25px;
+    }
+
+    .social li img {
+        width: 40px;
+    }
+
+}
 
