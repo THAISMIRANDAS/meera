@@ -48,6 +48,8 @@ header h1 {
 }
 
 nav {
+    position: sticky;
+    top: 0;
     background-color: var(--cor1);
     padding: 6px;
     text-align: center;
@@ -70,6 +72,11 @@ nav > a:hover {
     color: var(--cor3);
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.144), transparent);
     border-radius: 5px;
+}
+
+.borderbox {
+    box-sizing: border-box;
+    max-width: 800vh;
 }
 
 .slide-size {
@@ -125,7 +132,7 @@ nav > a:hover {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .logo img {
         max-width: 360px;
     }
